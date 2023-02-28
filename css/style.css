@@ -1,0 +1,249 @@
+/* common css start */
+:root{
+    --primary_color:#FFCC00;
+    --secondary_color:#353535;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+h1,h2{
+    font-family: 'PT Sans', sans-serif;
+}
+h3,h4,h5,h6{
+    font-weight: 600;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1110px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w_100{
+    width: 100%;
+}
+/* comon css end */
+
+/* nav section css start */
+#nav{
+    padding-top: 13px;
+}
+#nav div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+#nav ul li a{
+    display: inline-block;
+    padding: 14px 23px;
+    font-weight: 500;
+    font-size:15p ;
+    line-height: 200%;
+    text-transform: uppercase;
+    color: var(--secondary_color);
+    position: relative;
+}
+#nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--secondary_color);
+    bottom: 0;
+    left: 0;
+    transition: .6s;
+    transform: scaleX(0);
+}
+#nav ul li:hover a::after{
+transform: scaleX(1);
+}
+/* nav section css start */
+    
+/* banner section css start */
+#banner{
+    padding: 73px;
+}
+#banner .banner_content{
+    width: 60%;
+    padding-top: 15px;
+}
+#banner .banner_content h5{
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+color:var(--secondary_color);
+}
+#banner .banner_content h5::after{
+    content: '\f256';
+    font-family: "Font Awesome 5 Free";
+    font-size:400 ;
+    color: var(--primary_color);
+    padding-left: 40px;
+}
+#banner .banner_content h1{
+font-weight: 700;
+font-size: 64px;
+line-height: 83px;
+color: var(--secondary_color);
+}
+#banner .banner_content p{
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+color:var(--secondary_color);
+}
+
+#banner .banner_content > a{
+    padding: 20px 45px;
+    background-color:#fff;
+    color:black;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 60px;
+    border-radius: 20px;
+    margin-right: 45px;
+    text-transform: capitalize;
+    border: 1px solid black;
+    transition: .6s;
+}
+#banner .banner_content > a:hover{
+background-color: var(--primary_color);
+color: #fff;
+}
+#banner .banner_content ul li a{
+    width: 40px;
+    height: 40px;
+    background-color: #f4f3f3;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--secondary_color);
+}
+#banner .banner_content div.row{
+    padding-top: 65px;
+}
+#banner .banner_img{
+    width: 40%;
+    position: relative;
+}    
+#banner .banner_img img{
+transform: translateX(40px);
+}
+#banner .banner_img .bio{
+    position: absolute;
+    text-align: center;
+    background-color: #FFF;
+    box-shadow: 0px 4px 20pxx grey;
+    border-radius: 16px;
+    padding: 20px;
+    left: 0;
+    bottom: 30px;
+}
+
+/* banner section css end */
+
+/* about section css start */
+#about{
+background: linear-gradient(95.13deg, #FFCC00 -21.46%, #FFF5CB 112.13%);
+padding-top: 90px;
+}
+#about .about_img{
+    width: 40%;
+    
+}
+#about .about_info{
+    width: 60%;
+    padding-top: 40px;
+    position: relative;
+}
+#about .about_info h2{
+    font-size: 50px;
+    line-height: 65px;
+    color: var(--secondary_color);
+    text-transform: capitalize;
+}
+#about .about_info p{
+    font-size:20px ;
+    line-height:190% ;
+    color: var(--secondary_color);
+    padding-bottom: 55px;
+}
+#about .about_info a{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+    color: var(--secondary_color);
+    padding: 25px 40px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+#about .about_info img {
+    display: block;
+    position: absolute;
+    width: 208px;
+    height: 104px;
+    bottom: 0;
+    right: -110px;
+  }
+/* about section css end */
+
+/* fame section css start */
+#frame{
+    padding: 150px 0 165px;
+
+}
+#frame .frame_content {
+    width: 33%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 39px 47px;
+    text-align: center;
+  }
+  #frame .frame_content h3{
+    padding: 25px 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 180%;
+    color: var(--secondary_color);
+  }
+  #frame .frame_content p{
+    font-weight:400 ;
+    font-size: 16px;
+    line-height:190% ;
+    color: #7a7a7a;
+    text-align: center;
+  }
+  
+/* fame section css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
